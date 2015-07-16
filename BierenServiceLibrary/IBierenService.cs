@@ -16,5 +16,7 @@ namespace BierenServiceLibrary
         int GetAantalBierenTussenAlcohol(decimal van, decimal tot);
         [OperationContract]
         List<Bier> GetBierenMetWoord(string woord);
+        [OperationContract]
+        List<Bier> GetStrafsteBieren();
     }
 }

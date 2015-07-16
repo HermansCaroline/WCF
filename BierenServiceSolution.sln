@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleBierenServiceHost", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IISBierenServiceHost", "IISBierenServiceHost\IISBierenServiceHost.csproj", "{72F53863-FA3F-439A-8822-7FF46B419CD1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleBierenClient", "ConsoleBierenClient\ConsoleBierenClient.csproj", "{8E530085-3867-49AE-8FE1-3F1CCC4E40F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{72F53863-FA3F-439A-8822-7FF46B419CD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72F53863-FA3F-439A-8822-7FF46B419CD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72F53863-FA3F-439A-8822-7FF46B419CD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E530085-3867-49AE-8FE1-3F1CCC4E40F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E530085-3867-49AE-8FE1-3F1CCC4E40F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E530085-3867-49AE-8FE1-3F1CCC4E40F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E530085-3867-49AE-8FE1-3F1CCC4E40F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
