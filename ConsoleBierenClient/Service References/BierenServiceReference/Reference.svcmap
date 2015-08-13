@@ -27,6 +27,7 @@
     <MetadataFile FileName="bierenservice.xsd" MetadataType="Schema" ID="e654315b-d2c0-426b-81fb-c29e67c50c32" SourceId="1" SourceUrl="http://localhost/BierenServiceHost/BierenService.svc/mex/mex/mex" />
     <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="c5289661-7366-46da-9fb6-5f3662ed4329" SourceId="1" SourceUrl="http://localhost/BierenServiceHost/BierenService.svc/mex/mex/mex" />
     <MetadataFile FileName="BierenServiceLibrary.xsd" MetadataType="Schema" ID="c27a5e32-0439-468e-8a31-1b9fabb4a3f1" SourceId="1" SourceUrl="http://localhost/BierenServiceHost/BierenService.svc/mex/mex/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="2ac1a8f1-67c1-41b7-9fc5-237130ea7ab2" SourceId="1" SourceUrl="http://localhost/BierenServiceHost/BierenService.svc/mex/mex/mex" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

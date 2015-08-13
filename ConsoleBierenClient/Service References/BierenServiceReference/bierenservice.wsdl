@@ -5,6 +5,7 @@
       <xsd:import namespace="http://vdab.be/bierenservice" />
       <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
       <xsd:import namespace="http://schemas.datacontract.org/2004/07/BierenServiceLibrary" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="IBierenService_GetTotaalAantalBieren_InputMessage">
@@ -18,6 +19,9 @@
   </wsdl:message>
   <wsdl:message name="IBierenService_GetAantalBierenTussenAlcohol_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetAantalBierenTussenAlcoholResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBierenService_GetAantalBierenTussenAlcohol_AlcoholFoutFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/BierenServiceLibrary" name="detail" element="q1:AlcoholFout" />
   </wsdl:message>
   <wsdl:message name="IBierenService_GetBierenMetWoord_InputMessage">
     <wsdl:part name="parameters" element="tns:GetBierenMetWoord" />
@@ -39,6 +43,7 @@
     <wsdl:operation name="GetAantalBierenTussenAlcohol">
       <wsdl:input wsaw:Action="http://vdab.be/bierenservice/IBierenService/GetAantalBierenTussenAlcohol" message="tns:IBierenService_GetAantalBierenTussenAlcohol_InputMessage" />
       <wsdl:output wsaw:Action="http://vdab.be/bierenservice/IBierenService/GetAantalBierenTussenAlcoholResponse" message="tns:IBierenService_GetAantalBierenTussenAlcohol_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://vdab.be/bierenservice/IBierenService/GetAantalBierenTussenAlcoholAlcoholFoutFault" name="AlcoholFoutFault" message="tns:IBierenService_GetAantalBierenTussenAlcohol_AlcoholFoutFault_FaultMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetBierenMetWoord">
       <wsdl:input wsaw:Action="http://vdab.be/bierenservice/IBierenService/GetBierenMetWoord" message="tns:IBierenService_GetBierenMetWoord_InputMessage" />

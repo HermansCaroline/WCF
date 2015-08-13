@@ -13,6 +13,7 @@ namespace BierenServiceLibrary
         [OperationContract]
         int GetTotaalAantalBieren();
         [OperationContract]
+        [FaultContract(typeof(AlcoholFout))]
         int GetAantalBierenTussenAlcohol(decimal van, decimal tot);
         [OperationContract]
         List<Bier> GetBierenMetWoord(string woord);

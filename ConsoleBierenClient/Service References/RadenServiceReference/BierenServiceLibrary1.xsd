@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/BierenServiceLibrary" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/BierenServiceLibrary" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/" />
+  <xs:complexType name="RaadResultaat">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BesteScore" type="xs:int" />
+      <xs:element minOccurs="0" name="Beurten" type="xs:int" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="Hint" type="q1:Hint" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RaadResultaat" nillable="true" type="tns:RaadResultaat" />
+</xs:schema>
